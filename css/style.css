@@ -1,6 +1,9 @@
 header {
   display: flex;
   justify-content: space-between;
+}
+
+header {
   align-items: center;
   padding: 10px;
   margin-bottom: 20px;
@@ -17,14 +20,7 @@ header section p {
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
 }
-.nombregimnasio {
-  font-size: 40px;
-  color: white;
-  font-weight: bold;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.logoInicio-padre {
+header section div {
   border-style: solid;
   border-color: #85c1e9;
   border-radius: 20px;
@@ -32,33 +28,23 @@ header section p {
   height: 50px;
   overflow: hidden;
 }
-
-.logoInicio {
+header section div img {
   width: 100%;
   height: 100%;
 }
-
-.nav-titulo {
+header nav {
   display: flex;
   justify-content: space-between;
   padding: 10px;
   width: 400px;
 }
-
-a {
-  text-decoration: none;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.ingreso {
+header div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 150px;
 }
-
-.img-perfil {
+header div div {
   border-style: solid;
   border-color: #85c1e9;
   border-radius: 30px;
@@ -66,10 +52,15 @@ a {
   height: 50px;
   overflow: hidden;
 }
-
-.img-perfilhijo {
+header div div img {
   width: 100%;
   height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Responsive */
@@ -128,8 +119,7 @@ footer {
   padding-left: 10px;
   padding-right: 10px;
 }
-
-.logoFinal-padre {
+footer div {
   border-style: solid;
   border-color: #85c1e9;
   border-radius: 35px;
@@ -137,19 +127,16 @@ footer {
   height: 120px;
   overflow: hidden;
 }
-
-.logoFinal {
+footer div img {
   width: 100%;
   height: 100%;
 }
-
-li {
+footer nav ul li {
   list-style: none;
   display: flex;
   align-items: center;
 }
-
-.img-redes-sociales {
+footer nav ul li div {
   width: 40px;
   height: 40px;
   border-radius: 40px;
@@ -158,88 +145,27 @@ li {
   overflow: hidden;
   margin-right: 10px;
 }
-
-.img-redes-sociales-hijo {
+footer nav ul li div img {
   width: 100%;
   height: 100%;
 }
 
-.cuerpo-principal1 {
+section {
   display: flex;
   justify-content: center;
   justify-content: space-around;
 }
-
-.cuerpo-principal2 {
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-}
-
-.musculacion-abuelo {
+section div {
   height: 300px;
   width: 320px;
   text-align: center;
 }
-
-.musculacion-padre {
+section div div {
   height: 250px;
   width: 300px;
   margin: 10px;
 }
-
-.musculacion-hijo {
-  width: 100%;
-  height: 100%;
-}
-
-.boxeo-abuelo {
-  height: 300px;
-  width: 320px;
-  text-align: center;
-}
-
-.boxeo-padre {
-  height: 250px;
-  width: 300px;
-  margin: 10px;
-}
-
-.boxeo-hijo {
-  width: 100%;
-  height: 100%;
-}
-
-.squash-abuelo {
-  height: 300px;
-  width: 320px;
-  text-align: center;
-}
-
-.squash-padre {
-  height: 250px;
-  width: 300px;
-  margin: 10px;
-}
-
-.squash-hijo {
-  width: 100%;
-  height: 100%;
-}
-
-.artesmarciales-abuelo {
-  height: 300px;
-  width: 320px;
-  text-align: center;
-}
-
-.artesmarciales-padre {
-  height: 250px;
-  width: 300px;
-  margin: 10px;
-}
-
-.artesmarciales-hijo {
+section div div img {
   width: 100%;
   height: 100%;
 }
@@ -293,7 +219,7 @@ input:hover:focus {
   font-size: 20px;
 }
 
-.ejercicio {
+div .ejercicio {
   display: grid;
   grid-template-columns: 300px 300px 300px 300px;
   grid-template-rows: 250px 250px 250px;
@@ -363,15 +289,14 @@ input:hover:focus {
   text-align: center;
 }
 
-.Horarios {
+div .horarios {
   display: flex;
   height: 500px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.Horarios-texto {
+div .horarios .horarios-texto {
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
 }
