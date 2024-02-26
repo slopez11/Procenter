@@ -1,7 +1,5 @@
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
+    @extend %flex-center-between;
     background-color: #85c1e9;
     margin-top: 70px;
     padding-left: 10px;
@@ -22,8 +20,7 @@ footer {
             ul {
                 li{
                     list-style: none;
-                    display: flex;
-                    align-items: center;
+                    @extend %flex-center;
                     div{
                         width: 40px;
                         height: 40px;

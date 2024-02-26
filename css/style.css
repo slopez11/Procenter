@@ -1,10 +1,28 @@
-header {
+footer nav ul li {
   display: flex;
+  align-items: center;
+}
+
+footer, header div, header {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-header {
+section {
+  display: flex;
   align-items: center;
+  justify-content: space-around;
+}
+
+.button {
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* creamos variables para guardar un valor que se reutiliza en varios lugares */
+/* puedo luego importar el archivo donde lo necesito, en la pagina que sea */
+header {
   padding: 10px;
   margin-bottom: 20px;
   background-color: #85c1e9;
@@ -39,9 +57,6 @@ header nav {
   width: 400px;
 }
 header div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 150px;
 }
 header div div {
@@ -111,9 +126,6 @@ body {
   }
 }
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: #85c1e9;
   margin-top: 70px;
   padding-left: 10px;
@@ -133,8 +145,6 @@ footer div img {
 }
 footer nav ul li {
   list-style: none;
-  display: flex;
-  align-items: center;
 }
 footer nav ul li div {
   width: 40px;
@@ -150,11 +160,6 @@ footer nav ul li div img {
   height: 100%;
 }
 
-section {
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-}
 section div {
   height: 300px;
   width: 320px;

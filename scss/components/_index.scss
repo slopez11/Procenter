@@ -1,8 +1,6 @@
 
 section {
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
+    @extend %flex-center-around;
     div {
         height: 300px;
         width: 320px;
